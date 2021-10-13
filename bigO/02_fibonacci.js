@@ -1,4 +1,4 @@
-/* Exponential Runtime O(n!). But in this case it is actually O(1.6^n)*/
+/* Exponential Runtime O(2^n). But in this case it is actually O(1.6^n)*/
 
 const nthFib = (n) => {
     if (n <= 0) return 0;
@@ -7,8 +7,7 @@ const nthFib = (n) => {
     return nthFib(n - 1) + nthFib(n - 2);
 };
 
-/*From first sight it seams O(n * n!). But n is not constant. So it is still O(n!) */
-/* n!/0! + n!/1! + n!/2! + ... n!/n!  => n! *(1/0! + 1/1! + 1/2! + ... 1/n!) => n! * e; where e === 2.71 => true */
+/*From first sight it seams O(n * n^2). But n is not constant. So it is still O(n!) */
 
 const generateNFib = (n) => {
     let fibs = [];

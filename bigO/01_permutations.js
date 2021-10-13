@@ -14,6 +14,8 @@ const permutations = (string) => {
     return collection;
 };
 
+/* O(e *n!) => O(n!) */
+
 const permutations1 = (string) => {
     let collection = [];
 
