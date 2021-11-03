@@ -1,6 +1,6 @@
 // Find a b c d number that satisfies a^3 + b^3 = c^3 + d^3, a,b,c,d > 1 && <= 1000
 const findABCD = () => {
-    let n = 1000;
+    let n = 50;
     let result;
     let hash = {};
 
@@ -29,7 +29,7 @@ const findABCD = () => {
     for (let result in hash) {
         for (let pairAB of hash[result]) {
             for (let pairCD of hash[result]) {
-                if (pairAB[0] !== pairCD[0] && ) {
+                if (pairAB[0] !== pairCD[0]) {
                     console.log(...pairAB, ...pairCD);
                 }
             }
