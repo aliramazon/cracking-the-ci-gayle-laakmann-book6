@@ -23,3 +23,5 @@ const isAnagrams = (str1, str2) => {
     }
     return true;
 };
+
+/* Time Complaxity O(c), Space Complexity O(c) where is number of chars of either strings */
